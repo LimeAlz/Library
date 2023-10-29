@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <div class="header"> 
+        <p class="pagename">Library</p>
+        <button class="newbook" id="showform">Add New Book</button>
+    </div>
+    <main>
+        <div class="addbook hidden" >
+            <form action="#" class="form">
+                <h1>Enter the Book Information</h1>
+                <input type="text" name="bookname" id="bookname" placeholder="book name">
+                <input type="text" name="author" id="author" placeholder="author">
+                <input type="number" name="pages" id="pages" placeholder="pages">
+                <fieldset>
+                    <label for="haveRead">Have Read</label>
+                    <input type="checkbox" name="haveRead" id="haveRead" and value="1">
+                </fieldset>
+
+                <button type="submit" id="addbook">Add Book</button>
+            </form>
+        </div>
+        <div class="bookshelf">
+            <h1>Books</h1>
+            <div class="book-grid">
+                <!-- <p>Test</p> -->
+                <table class="table">
+                    <tr class ="header-row">
+                        <td class="td-head">Book Name</td>
+                        <td class="td-head">Author</td>
+                        <td class="td-head">Pages</td>
+                        <td class="td-head">Have Read?</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

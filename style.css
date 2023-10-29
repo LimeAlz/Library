@@ -1,0 +1,107 @@
+.header{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: centers;
+   
+}
+
+.pagename{
+    font-size: 48px;
+    font-family: 'Sometype Mono', monospace;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.newbook{
+    background-color: rgb(187, 255, 0);
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Sometype Mono', monospace;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+main{
+    display: flex;
+    height: 80vh;
+}
+
+.addbook{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 25px;
+    margin:25px;
+    background-color: rgb(187, 255, 0);
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: 'Sometype Mono', monospace;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:25px;
+}
+
+.form input, .form button{
+    background-color: rgb(226, 222, 222) ;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: inherit;
+}
+
+
+
+.form fieldset{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.bookshelf{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    padding:25px;
+    font-family: 'Sometype Mono', monospace;
+    width: 100%;
+    /* height:100%; */
+}
+
+.bookshelf h1{
+    font-size: 36px;
+}
+
+.book-grid{
+    background-color: rgb(226, 222, 222);
+}
+
+.table{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.td-head{
+    background-color: rgb(170, 169, 169);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+    transition: opacity 4s linear;
+}
