@@ -32,12 +32,21 @@ function addBookToLibrary(book) {
   pageData.textContent = book.pages;
 
   const haveReadData = document.createElement('td');
+  haveReadData.classList.add('read');
   haveReadData.textContent = book.haveRead;
+
+  const haveFinished = document.createElement('td');
+  const finished =  document.createElement('button');
+  finished.textContent = "Finished";
+  finished.classList.add("finished")
+  haveFinished.appendChild(finished);
+
 
   newRow.appendChild(nameData);
   newRow.appendChild(authorData);
   newRow.appendChild(pageData);
   newRow.appendChild(haveReadData);
+  newRow.appendChild(haveFinished);
 
   table.appendChild(newRow);
 }
@@ -68,3 +77,30 @@ button.addEventListener('click', (e)=>{
 }
   
 )
+
+// // const finishButton = document.querySelector('.finished');
+// finished.addEventListener('click',(e)=>{
+//     e.preventDefault();
+//     if (haveReadData.textContent === 'true'){
+//       haveReadData.textContent  = false;
+//     }
+//     else{
+//       haveReadData.textContent  = true;
+//     }
+// }
+// )
+
+table.addEventListener('click', (e) => {
+  if (e.target.classList.contains('finished')) {
+    e.preventDefault();
+    const clickedButton = e.target;
+    const row = clickedButton.closest('tr'); // Find the parent row of the clicked button
+    const haveReadData = row.querySelector('.read'); // Find the corresponding haveReadData cell in the same row
+
+    if (haveReadData.textContent === "true") {
+      haveReadData.textContent = "false";
+    } else {
+      haveReadData.textContent = "true";
+    }
+  }
+});
