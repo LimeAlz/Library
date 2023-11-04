@@ -109,6 +109,14 @@ main{
     font-family: inherit;
 }
 
+.removed{
+    background-color: rgb(226, 222, 222) ;
+    padding: 5px 7.5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: inherit;
+}
+
 
 
 .hidden{
